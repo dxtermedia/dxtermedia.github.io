@@ -13,6 +13,55 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <style type="text/css">
+            
+        .overlay {
+                width:100vw;
+                height:100vh;
+                background: linear-gradient(330deg, #00e8d7, #00bfe9);
+background-size: 400% 400%;
+
+animation: AnimationName 30s ease infinite;
+            }
+
+            
+
+
+@keyframes AnimationName { 
+    0%{background-position:15% 0%}
+    50%{background-position:86% 100%}
+    100%{background-position:15% 0%}
+}
+
+
+
+            div.logo {
+                position:fixed;
+                top:50%;
+                left:50%;
+                transform: translateX(-50%) translateY(-80%);
+                width:100%;
+                max-width: 320px;
+                animation: Buildin 1s;
+                animation-fill-mode: forwards;
+
+            }
+            
+            div.logo img {
+                width:100%;
+            }
+
+
+
+@keyframes Buildin { 
+    from{opacity:0; top:60%;}
+    to{opacity:1; top:50%;}
+}
+            
+
+        
+
+        </style>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -20,7 +69,11 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <div class="overlay">
+            <div class="logo">
+            <img src="img/logo.png"/>
+            </div>
+        </div>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
