@@ -18,8 +18,8 @@
         .overlay {
                 width:100vw;
                 height:100vh;
-                background: linear-gradient(330deg, #00e8d7, #00bfe9);
-background-size: 400% 400%;
+                background: linear-gradient(328deg, #00e8d7, #9003ff, #00e8d7);
+background-size: 600% 600%;
 
 animation: AnimationName 30s ease infinite;
             }
@@ -27,12 +27,21 @@ animation: AnimationName 30s ease infinite;
             
 
 
-@keyframes AnimationName { 
-    0%{background-position:15% 0%}
-    50%{background-position:86% 100%}
-    100%{background-position:15% 0%}
+@-webkit-keyframes AnimationName {
+    0%{background-position:4% 0%}
+    50%{background-position:97% 100%}
+    100%{background-position:4% 0%}
 }
-
+@-moz-keyframes AnimationName {
+    0%{background-position:4% 0%}
+    50%{background-position:97% 100%}
+    100%{background-position:4% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:4% 0%}
+    50%{background-position:97% 100%}
+    100%{background-position:4% 0%}
+}
 
 
             div.logo {
