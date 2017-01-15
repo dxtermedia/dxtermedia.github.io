@@ -96,6 +96,314 @@ textarea {
    ========================================================================== */
 
 
+        html,body {
+            min-width: :100%;
+            min-height:100%;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .overlay, .bottom-cta-outer {
+            background: linear-gradient(328deg, #00e8d7, #9003ff, #00e8d7);
+            background-size: 600% 600%;
+            animation: AnimationName 30s ease infinite;
+            width:100vw;
+            height:100vh;
+            text-align: center;
+        }
+
+        h1, h2 {
+            background: -webkit-linear-gradient(328deg, #00e8d7, #9003ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin:4em 0 1em 0;
+
+        }
+
+        h2{
+            position:relative;
+            font-size:32px;
+            padding-top: 2em
+        }
+
+        h2:before{
+            content:"";
+            width:2em;
+            height:2px;
+            background-color:#00e8d7;
+            position:absolute;
+            top:1.3em;
+            left:0;
+
+        }
+
+        .spacer-2em {
+            height:2em;
+        }
+
+        a.button {
+            padding:.6em 1em;
+            font-size: 18px;
+            display: inline-block;
+            border:1px solid rgba(255,255,255,.6);
+            color:#fff;
+            text-decoration:none;
+            position: relative;
+            transition:300ms;
+            transition-timing-function: cubic-bezier(.83,.01,.25,1);
+            animation-name: Buildin;
+            animation-duration: 1.5s;
+            animation-fill-mode: both;
+            animation-delay: 1s;
+            border-radius: 3px;
+        }
+
+
+
+        a.button:before {
+            content:"";
+            height:47px;
+            width:0%;
+            background:yellow;
+            position:absolute;
+            top:0;
+            left:0;
+            z-index: -1;
+            transition: 300ms;
+            border-radius: 2px;
+            transition-timing-function: cubic-bezier(.83,.01,.25,1);
+
+        }
+
+        a.button:hover:before {
+            content:"";
+            height:47px;
+            width:100%;
+            background:yellow;
+            position:absolute;
+
+        }
+
+        a.button:hover {
+            color:#525423;
+            border:1px solid yellow;
+        }
+
+        a.button-secondary {
+            padding:.6em 1em;
+            font-size: 18px;
+            display: inline-block;
+            color:rgba(255,255,255,.6);
+            text-decoration:none;
+            transition:300ms;
+            transition-timing-function: cubic-bezier(.83,.01,.25,1);
+            animation-name: Buildin;
+            animation-duration: 1.5s;
+            animation-fill-mode: both;
+            animation-delay: 1.25s;
+        }
+
+        a.button-secondary:hover {
+            color:rgba(255,255,255,1);
+        }
+
+        .highlight {
+            background:yellow;
+            color:#969940;
+        }
+
+        h3, h4, h5 {
+            color:#444;
+        }
+
+        p.intro-text {
+            font-size:32px;
+            color:#999;
+            padding-top:1em;
+        }
+            
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:4% 0%}
+    50%{background-position:97% 100%}
+    100%{background-position:4% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:4% 0%}
+    50%{background-position:97% 100%}
+    100%{background-position:4% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:4% 0%}
+    50%{background-position:97% 100%}
+    100%{background-position:4% 0%}
+}
+
+
+            div.logo {
+                position:fixed;
+                top:50%;
+                left:50%;
+                transform: translateX(-50%) translateY(-50%);
+                width:50%;
+                min-width: 200px;
+                max-width: 350px;
+
+
+            }
+
+            div.logo img {
+                animation-name: Buildin;
+                animation-duration: 1.5s;
+                animation-fill-mode: both;
+            }
+
+            div.logo p {
+                color:rgba(255,255,255,.8);
+                font-size: 18px;
+                text-align: center;
+                animation-name: Buildin;
+                animation-duration: 1.5s;
+                animation-fill-mode: both;
+                animation-delay: .5s;
+                margin-top: 2em;
+                width:100%;
+                font-weight: bold;
+            }
+            
+            div.logo img {
+                width:100%;
+            }
+
+
+
+@keyframes Buildin { 
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0px)}
+}
+            
+    .app-info {
+        position:relative;
+        z-index: 100;
+        background:whitesmoke;
+        padding:3em;
+    }
+
+    .app-info-content {
+        max-width: 36em;
+        padding-left:12em;
+        position:relative;
+        margin:0 auto;
+        color:#666;
+    }
+
+    ul {
+        padding-left:1.6em;
+    }
+
+    ul li {
+        margin:1em 0;
+        list-style: none;
+        position:relative;
+        padding:0;
+    }
+
+    ul li:before {
+        content:"•";
+        position:absolute;
+        left:-2.6em;
+        top:.6em;
+        color:#00e8d7;
+        font-size: .5em
+
+    }
+
+
+    .table-of-contents {
+        position: fixed;
+        top:3em;
+        left:50%;
+        margin-left:-36em;
+        width:12em;
+        font-size: .6em;
+        text-transform:uppercase;
+        opacity:0;
+        transition:300ms;
+
+
+    }
+
+    .table-of-contents.show {
+        opacity:1;
+
+
+    }
+
+    .table-of-contents ul {
+        padding: 0;
+
+    }
+
+    .table-of-contents ul li:before{
+        content:"";
+    }
+
+    .table-of-contents ul li a{
+        text-decoration:none;
+        color:rgba(0,0,0,.4);
+        display: inline-block;
+        position: relative;
+        padding:.3em;
+        transition:300ms;
+    }
+
+    .table-of-contents ul li a:hover{
+        text-decoration:none;
+        color:rgba(0,0,0,.9);
+    }
+
+    .table-of-contents ul li a:before {
+            content:"";
+            height:100%;
+            width:0%;
+            background:yellow;
+            position:absolute;
+            top:0;
+            left:0;
+            z-index: -1;
+            transition: 300ms;
+            transition-timing-function: cubic-bezier(.83,.01,.25,1);
+
+        }
+
+        .table-of-contents ul li a:hover:before {
+            content:"";
+            height:100%;
+            width:100%;
+            background:yellow;
+            position:absolute;
+
+        }
+
+
+         .bottom-cta-outer {
+            position: relative;
+            z-index: 100;
+            padding:1em 0;
+            color:#fff;
+            position:relative;
+         }
+
+         .bottom-cta-inner {
+            max-width: 36em;
+            font-size: 2em;
+            position: relative;
+            margin: 0 auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%)
+         }
 
 
 
@@ -103,6 +411,59 @@ textarea {
 
 
 
+
+@media screen and (max-width: 850px) {
+    .table-of-contents {
+        position: static;
+        top:3em;
+        left:50%;
+        margin-left:0;
+        width:100%;
+        font-size: .6em;
+        text-transform:uppercase;
+        opacity:1;
+        transition:300ms;
+
+    }
+
+    .app-info-content {
+        max-width: 36em;
+        padding-left:0;
+        position:relative;
+        margin:0 auto;
+        color:#666;
+    }
+
+    .table-of-contents.show {
+        opacity:1;
+
+
+    }
+
+    .table-of-contents ul {
+        padding: 0;
+
+    }
+
+    .table-of-contents ul li{
+        display:inline-block;
+    }
+
+    .table-of-contents ul li:before{
+        content:"";
+    }
+
+    .table-of-contents ul li a{
+        text-decoration:none;
+        color:rgba(0,0,0,.4);
+        display: inline-block;
+        position: relative;
+        padding:.6em;
+        margin:0 1em;
+    }
+
+    
+}
 
 
 

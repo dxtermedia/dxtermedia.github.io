@@ -12,78 +12,11 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <style type="text/css">
             
-        .overlay {
-                width:100vw;
-                height:100vh;
-                background: linear-gradient(328deg, #00e8d7, #9003ff, #00e8d7);
-background-size: 600% 600%;
 
-animation: AnimationName 30s ease infinite;
-            }
-
-            
-
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:4% 0%}
-    50%{background-position:97% 100%}
-    100%{background-position:4% 0%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:4% 0%}
-    50%{background-position:97% 100%}
-    100%{background-position:4% 0%}
-}
-@keyframes AnimationName { 
-    0%{background-position:4% 0%}
-    50%{background-position:97% 100%}
-    100%{background-position:4% 0%}
-}
-
-
-            div.logo {
-                position:fixed;
-                top:50%;
-                left:50%;
-                transform: translateX(-50%) translateY(-50%);
-                width:50%;
-                min-width: 200px;
-                max-width: 350px;
-                animation: Buildin 1s;
-                animation-fill-mode: both;
-
-
-            }
-
-            div.logo p {
-                color:rgba(255,255,255,.8);
-                font-size: 18px;
-                text-align: center;
-                animation-name: Buildin;
-                animation-duration: 1.5s;
-                animation-fill-mode: both;
-                animation-delay: .5s;
-                margin-top: 2em;
-                width:100%;
-                font-weight: bold;
-            }
-            
-            div.logo img {
-                width:100%;
-            }
-
-
-
-@keyframes Buildin { 
-    from{opacity:0; top:60%;}
-    to{opacity:1; top:50%;}
-}
-            
-
-        
 
         </style>
     </head>
@@ -93,10 +26,87 @@ animation: AnimationName 30s ease infinite;
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <div class="overlay">
+        <div class="overlay" id="home">
             <div class="logo">
             <img src="img/logo.png"/>
-            <p>A new way to stay up on the latest scholarly research.</p>
+            <p>An audio platform for scholarly articles </p>
+            <div class="spacer-2em"></div>
+            <a href="#who-we-are" class="button">Learn More</a>
+            </div>
+        </div>
+
+        
+
+        <div class="app-info">
+        
+            <div class="app-info-content">
+
+            <div class="table-of-contents" id="table-of-contents">
+            <ul>
+                <li><a href="#who-we-are">Who We Are</a></li>
+                <li><a href="#our-platform">Our Platform</a></li>
+                <li><a href="#target-audiences">Target Audiences</a></li>
+                <li><a href="#what-sets-us-apart">What Sets us Apart</a></li>
+                <li><a href="#long-term-goals">Long-term Goals</a></li>
+                <li><a class="main-contents-cta" href="#get-involved">Get Involved</a></li>
+            </ul>
+        </div>
+
+
+            <p id="who-we-are" class="intro-text"><span class="highlight">Dxter</span> is a contemporary venue for <span class="highlight">sharing knowledge.</span> We produce and distribute <span class="highlight">audio versions</span> of academic papers and scholarly articles. Our audio library serves as a new platform <span class="highlight">for researchers</span> to publish their work, <span class="highlight">and for the rest of us</span> to learn about it. With Dxter, information and ideas once stuck on the page are now <span class="highlight">more accessible</span> and more likely to provoke <span class="highlight">thoughtfulness and innovation.</span></p>
+
+            <h2 id="our-platform">Our Platform</h2>
+
+            <p>Audio versions of academic articles, research reports, and other intellectually-stimulating material, compiled in a searchable library available to consumers through the Dxter website, our mobile app, or as individual, sharable files. </p>
+
+            <h3>Product Features</h3>
+            <ul>
+            <li>Professionally narrated articles</li>
+            <li>User-friendly intros and summaries in jargon-free, non-academic language</li>
+            <li>Additional author commentary</li>
+            <li>Mobile accessibility</li>
+            </ul>
+
+            <h3>Added Value</h3>
+            <ul>
+            <li>Audio versions of academic articles and reports promote the opportunity for learning and better absorption of material for busy students and professionals, individuals with learning disabilities, the visually impaired, and anyone looking for an alternative to reading online or printed articles.</li>
+            <li>Featured audio articles will include a summary and conclusion in non-academic language to help listeners take away key messages from the article. </li>
+            <li>Dxter provides a platform for authors to share research and for journals and research organizations to market themselves. </li>
+            </ul>
+
+
+            <h2 id="target-audiences">Target Audiences</h2>
+
+            <p><strong>Individuals:</strong> Students, researchers, academic, professionals seeking to stay up to speed in research relevant to their field, lovers of learning</p>
+
+            <p><strong>Institutions:</strong> Colleges, universities, think tanks, academic institutions can utilize Dxter to produce and share audio versions of articles they produce.</p>
+            
+            <h2 id="competitive-strengths">Competitive Strengths</h2>
+
+            <ul>
+            <li>Dxter is the first product of its kind. It fills a gap in research and publishing and responds to the growing demands for intellectually stimulating material and audio products.</li>
+            <li>Dxter has the potential to attract a broad user base. We have the potential to capture a large and diverse market in students, researchers, academics, life-long learners, non-profit organizations, think tanks, and more. We will initially target universities, research institutions, and journals seeking new platforms to disseminate their work, as well as individual consumers seeking to keep abreast of research, literature, and thinking in their areas of interest.</li>
+            <li>Dxter complements rather than replaces print and online articles; Instead of competing with Dxter, authors and publishing platforms can use Dxter to promote their work.</li>
+            <li>Through our alma mater, Brown University, we have a network of professors, students, and research organizations as a resource to test, start-up, and market our product.</li>
+            <li>As young policy professionals, we understand both the academic and research worlds, as well as the priorities and preferences of our millennial peers.</li>
+            </ul>
+            
+            <h2 id="long-term-goals">Long-term Goals</h2>
+            <ul>
+            <li>A Dxter podcast featuring interviews with authors and discussions of the practical implications of their research.</li>  
+            <li>Most new articles published in print or online through major journals and institutions are available on Dxter. </li> 
+            <li>Journals and think tanks feature Dxter button to download the audio version as well as PDF or print version</li> 
+                </div>
+<div class="spacer-2em"></div>
+<div class="spacer-2em"></div>
+<div class="spacer-2em"></div>
+        </div>
+
+        <div class="bottom-cta-outer" id="get-involved">
+            <div class="bottom-cta-inner">
+                <p>Interested in getting in touch? Curious about investing?</p>
+                <a href="mailto:hellodxter@gmail.com" class="button">Contact us.</a>
+                <a href="#home" class="button-secondary">Home</a>
             </div>
         </div>
 
