@@ -151,9 +151,9 @@ textarea {
             transition:300ms;
             transition-timing-function: cubic-bezier(.83,.01,.25,1);
             animation-name: Buildin;
-            animation-duration: 1.5s;
+            animation-duration: 600ms;
             animation-fill-mode: both;
-            animation-delay: 1s;
+            animation-delay: 600ms;
             border-radius: 3px;
         }
 
@@ -254,7 +254,7 @@ textarea {
 
             div.logo img {
                 animation-name: Buildin;
-                animation-duration: 1.5s;
+                animation-duration: 600ms;
                 animation-fill-mode: both;
             }
 
@@ -263,9 +263,9 @@ textarea {
                 font-size: 18px;
                 text-align: center;
                 animation-name: Buildin;
-                animation-duration: 1.5s;
+                animation-duration: 600ms;
                 animation-fill-mode: both;
-                animation-delay: .5s;
+                animation-delay: 300ms;
                 margin-top: 2em;
                 width:100%;
                 font-weight: bold;
