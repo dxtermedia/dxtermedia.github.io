@@ -467,6 +467,49 @@ textarea {
 
 
 
+@media screen and (max-width: 400px) {
+    .intro-text {
+        font-size: 18px!important;
+    }
+
+    .bottom-cta-inner {
+            max-width: 36em;
+            padding:1em;
+            font-size: 2em;
+            position: relative;
+            margin: 0 auto;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%)
+         }
+
+        h2{
+            position:relative;
+            font-size:32px;
+            padding-top: 2em;
+            margin:0;
+        }
+
+        .table-of-contents ul {
+        padding: 0;
+
+    }
+
+    .table-of-contents ul li{
+        display:block;
+    }
+
+    .table-of-contents ul li:before{
+        content:"";
+    }
+
+    .table-of-contents ul li a{
+        padding:1em;
+        font-size: 12px;
+        margin:0em;
+    }
+    
+}
 
 
 
