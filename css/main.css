@@ -96,6 +96,7 @@ textarea {
    ========================================================================== */
 
 
+
         html,body {
             min-width: :100%;
             min-height:100%;
@@ -109,20 +110,42 @@ textarea {
             width:100vw;
             height:100vh;
             text-align: center;
+            color:#fff;
         }
 
-        h1, h2 {
+        
+
+        h2 {
             background: -webkit-linear-gradient(328deg, #00e8d7, #9003ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin:4em 0 1em 0;
+  margin:2em 0 1em 0;
 
+        }
+
+        .logo-right {
+            width:100%;
+            position:fixed;
+            top:20px;
+        }
+
+        .logo-right-wrapper {
+            width:100%;
+            margin:0 auto;
+            text-align: left;
+        }
+
+        .logo-right img {
+            width:100%;
+            max-width: 150px;
+            margin-left: 20px;
+            height:auto;
         }
 
         h2{
             position:relative;
             font-size:32px;
-            padding-top: 2em
+            padding-top: 4em;
         }
 
         h2:before{
@@ -131,8 +154,8 @@ textarea {
             height:2px;
             background-color:#00e8d7;
             position:absolute;
-            top:1.3em;
             left:0;
+            top: 3.3em;
 
         }
 
@@ -247,7 +270,7 @@ textarea {
                 transform: translateX(-50%) translateY(-50%);
                 width:50%;
                 min-width: 200px;
-                max-width: 350px;
+                max-width: 380px;
 
 
             }
@@ -266,13 +289,19 @@ textarea {
                 animation-duration: 600ms;
                 animation-fill-mode: both;
                 animation-delay: 300ms;
-                margin-top: 2em;
+                margin-top: 0em;
                 width:100%;
                 font-weight: bold;
             }
             
             div.logo img {
                 width:100%;
+            }
+
+            div.logo h1 {
+            font-size: 60px;
+            line-height: 1;
+            margin-bottom:.3em;
             }
 
 
@@ -291,7 +320,7 @@ textarea {
 
     .app-info-content {
         max-width: 36em;
-        padding-left:12em;
+        padding-left:0;
         position:relative;
         margin:0 auto;
         color:#666;
@@ -306,6 +335,7 @@ textarea {
         list-style: none;
         position:relative;
         padding:0;
+        display: inline-block;
     }
 
     ul li:before {
@@ -321,26 +351,44 @@ textarea {
 
     .table-of-contents {
         position: fixed;
-        top:3em;
-        left:50%;
-        margin-left:-36em;
-        width:12em;
-        font-size: .6em;
+        z-index: 999;
+        top:0;
+        left:0;
+        width:100%;
+        font-size: .8em;
         text-transform:uppercase;
+        text-align: center;
         opacity:0;
         transition:300ms;
-
+        transform:translateY(-20px);
+        -webkit-box-shadow: 0px 3px 41px 0px rgba(144,3,255,0.06);
+-moz-box-shadow: 0px 3px 41px 0px rgba(144,3,255,0.06);
+box-shadow: 0px 3px 41px 0px rgba(144,3,255,0.06);
+Copy Text
 
     }
 
     .table-of-contents.show {
         opacity:1;
+        background-color: white;
+        transform:translateY(0px);
 
+    }
 
+    .darklogo {
+        width:150px;
+        height:auto;
+        margin:1em 20px;
+    }
+
+    .darklogo img{
+        width:100%;
+        height:auto;
     }
 
     .table-of-contents ul {
         padding: 0;
+        margin:0;
 
     }
 
@@ -353,7 +401,8 @@ textarea {
         color:rgba(0,0,0,.4);
         display: inline-block;
         position: relative;
-        padding:.3em;
+        padding:.6em;
+        transform: translateY(.3em);
         transition:300ms;
     }
 
@@ -485,9 +534,8 @@ textarea {
 
         h2{
             position:relative;
-            font-size:32px;
-            padding-top: 2em;
-            margin:0;
+            font-size: 32px;
+            padding-top: 4em;
         }
 
         .table-of-contents ul {
