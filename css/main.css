@@ -521,6 +521,12 @@ Copy Text
         font-size: 18px!important;
     }
 
+    div.logo h1 {
+            font-size: 30px;
+            line-height: 1;
+            margin-bottom:.6em;
+            }
+
     .bottom-cta-inner {
             max-width: 36em;
             padding:1em;
